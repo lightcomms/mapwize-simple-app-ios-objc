@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F0ABE87200E311C00D0F089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0ABE86200E311C00D0F089 /* AppDelegate.m */; };
+		8F0ABE8A200E311C00D0F089 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0ABE89200E311C00D0F089 /* ViewController.m */; };
+		8F0ABE8D200E311C00D0F089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0ABE8B200E311C00D0F089 /* Main.storyboard */; };
+		8F0ABE8F200E311C00D0F089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0ABE8E200E311C00D0F089 /* Assets.xcassets */; };
+		8F0ABE92200E311C00D0F089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0ABE90200E311C00D0F089 /* LaunchScreen.storyboard */; };
+		8F0ABE95200E311C00D0F089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0ABE94200E311C00D0F089 /* main.m */; };
+		EE38911BDDA94AB97ACE8527 /* Pods_MapwizeSimpleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED40561887B169E0F4C897F8 /* Pods_MapwizeSimpleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F0ABE82200E311C00D0F089 /* MapwizeSimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapwizeSimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0ABE85200E311C00D0F089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F0ABE86200E311C00D0F089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F0ABE88200E311C00D0F089 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F0ABE89200E311C00D0F089 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F0ABE8C200E311C00D0F089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F0ABE8E200E311C00D0F089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F0ABE91200E311C00D0F089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F0ABE93200E311C00D0F089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0ABE94200E311C00D0F089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		962208EA9EDFFABDD48FC69D /* Pods-MapwizeSimpleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapwizeSimpleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapwizeSimpleApp/Pods-MapwizeSimpleApp.release.xcconfig"; sourceTree = "<group>"; };
+		9A3D47595EE384CD0018C814 /* Pods-MapwizeSimpleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapwizeSimpleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapwizeSimpleApp/Pods-MapwizeSimpleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ED40561887B169E0F4C897F8 /* Pods_MapwizeSimpleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapwizeSimpleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F0ABE7F200E311C00D0F089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE38911BDDA94AB97ACE8527 /* Pods_MapwizeSimpleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19AC89AC516180996C02C90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED40561887B169E0F4C897F8 /* Pods_MapwizeSimpleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6761EDB4FB8544D4A33C92A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A3D47595EE384CD0018C814 /* Pods-MapwizeSimpleApp.debug.xcconfig */,
+				962208EA9EDFFABDD48FC69D /* Pods-MapwizeSimpleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F0ABE79200E311C00D0F089 = {
+			isa = PBXGroup;
+			children = (
+				8F0ABE84200E311C00D0F089 /* MapwizeSimpleApp */,
+				8F0ABE83200E311C00D0F089 /* Products */,
+				6761EDB4FB8544D4A33C92A2 /* Pods */,
+				19AC89AC516180996C02C90E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F0ABE83200E311C00D0F089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F0ABE82200E311C00D0F089 /* MapwizeSimpleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F0ABE84200E311C00D0F089 /* MapwizeSimpleApp */ = {
+			isa = PBXGroup;
+			children = (
+				8F0ABE85200E311C00D0F089 /* AppDelegate.h */,
+				8F0ABE86200E311C00D0F089 /* AppDelegate.m */,
+				8F0ABE88200E311C00D0F089 /* ViewController.h */,
+				8F0ABE89200E311C00D0F089 /* ViewController.m */,
+				8F0ABE8B200E311C00D0F089 /* Main.storyboard */,
+				8F0ABE8E200E311C00D0F089 /* Assets.xcassets */,
+				8F0ABE90200E311C00D0F089 /* LaunchScreen.storyboard */,
+				8F0ABE93200E311C00D0F089 /* Info.plist */,
+				8F0ABE94200E311C00D0F089 /* main.m */,
+			);
+			path = MapwizeSimpleApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F0ABE81200E311C00D0F089 /* MapwizeSimpleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0ABE98200E311C00D0F089 /* Build configuration list for PBXNativeTarget "MapwizeSimpleApp" */;
+			buildPhases = (
+				B3E5C7A9853DB8C46F4E6F67 /* [CP] Check Pods Manifest.lock */,
+				8F0ABE7E200E311C00D0F089 /* Sources */,
+				8F0ABE7F200E311C00D0F089 /* Frameworks */,
+				8F0ABE80200E311C00D0F089 /* Resources */,
+				1AD0E8F7038A44F1F82975E4 /* [CP] Embed Pods Frameworks */,
+				24662D18A97BC147EF5EE99F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapwizeSimpleApp;
+			productName = MapwizeSimpleApp;
+			productReference = 8F0ABE82200E311C00D0F089 /* MapwizeSimpleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F0ABE7A200E311C00D0F089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Etienne Mercier";
+				TargetAttributes = {
+					8F0ABE81200E311C00D0F089 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8F0ABE7D200E311C00D0F089 /* Build configuration list for PBXProject "MapwizeSimpleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F0ABE79200E311C00D0F089;
+			productRefGroup = 8F0ABE83200E311C00D0F089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F0ABE81200E311C00D0F089 /* MapwizeSimpleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F0ABE80200E311C00D0F089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0ABE92200E311C00D0F089 /* LaunchScreen.storyboard in Resources */,
+				8F0ABE8F200E311C00D0F089 /* Assets.xcassets in Resources */,
+				8F0ABE8D200E311C00D0F089 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AD0E8F7038A44F1F82975E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapwizeSimpleApp/Pods-MapwizeSimpleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24662D18A97BC147EF5EE99F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapwizeSimpleApp/Pods-MapwizeSimpleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E5C7A9853DB8C46F4E6F67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F0ABE7E200E311C00D0F089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0ABE8A200E311C00D0F089 /* ViewController.m in Sources */,
+				8F0ABE95200E311C00D0F089 /* main.m in Sources */,
+				8F0ABE87200E311C00D0F089 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F0ABE8B200E311C00D0F089 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F0ABE8C200E311C00D0F089 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F0ABE90200E311C00D0F089 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F0ABE91200E311C00D0F089 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F0ABE96200E311C00D0F089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F0ABE97200E311C00D0F089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F0ABE99200E311C00D0F089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3D47595EE384CD0018C814 /* Pods-MapwizeSimpleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGHGAE294R;
+				INFOPLIST_FILE = MapwizeSimpleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.MapwizeSimpleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F0ABE9A200E311C00D0F089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962208EA9EDFFABDD48FC69D /* Pods-MapwizeSimpleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGHGAE294R;
+				INFOPLIST_FILE = MapwizeSimpleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.MapwizeSimpleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F0ABE7D200E311C00D0F089 /* Build configuration list for PBXProject "MapwizeSimpleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0ABE96200E311C00D0F089 /* Debug */,
+				8F0ABE97200E311C00D0F089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0ABE98200E311C00D0F089 /* Build configuration list for PBXNativeTarget "MapwizeSimpleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0ABE99200E311C00D0F089 /* Debug */,
+				8F0ABE9A200E311C00D0F089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F0ABE7A200E311C00D0F089 /* Project object */;
+}
