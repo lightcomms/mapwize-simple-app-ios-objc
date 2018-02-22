@@ -1,5 +1,5 @@
 #import "ViewController.h"
-
+#import "LVLCIndoorLocationProvider.h"
 @interface ViewController ()
 
 @end
@@ -13,6 +13,7 @@ MapwizePlugin* mapwizePlugin;
     mapwizePlugin = [[MapwizePlugin alloc] initWith:_mglMapView];
     mapwizePlugin.delegate = self;
     mapwizePlugin.mapboxDelegate = self;
+    [mapwizePlugin setIndoorLocationProvider:[[LVLCIndoorLocationProvider alloc] init]];
 }
 
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86BB7462203EFDB600DF29D9 /* LVLCIndoorLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BB7461203EFDB600DF29D9 /* LVLCIndoorLocationProvider.m */; };
+		86BB7464203F0F4000DF29D9 /* libvlc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BB7463203F0F4000DF29D9 /* libvlc.framework */; };
+		86BB7465203F0F4000DF29D9 /* libvlc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86BB7463203F0F4000DF29D9 /* libvlc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F0ABE87200E311C00D0F089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0ABE86200E311C00D0F089 /* AppDelegate.m */; };
 		8F0ABE8A200E311C00D0F089 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0ABE89200E311C00D0F089 /* ViewController.m */; };
 		8F0ABE8D200E311C00D0F089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0ABE8B200E311C00D0F089 /* Main.storyboard */; };
@@ -16,7 +19,24 @@
 		EE38911BDDA94AB97ACE8527 /* Pods_MapwizeSimpleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED40561887B169E0F4C897F8 /* Pods_MapwizeSimpleApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		86BB745F203EFC5800DF29D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86BB7465203F0F4000DF29D9 /* libvlc.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		86BB7460203EFDB600DF29D9 /* LVLCIndoorLocationProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVLCIndoorLocationProvider.h; sourceTree = "<group>"; };
+		86BB7461203EFDB600DF29D9 /* LVLCIndoorLocationProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVLCIndoorLocationProvider.m; sourceTree = "<group>"; };
+		86BB7463203F0F4000DF29D9 /* libvlc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvlc.framework; sourceTree = "<group>"; };
 		8F0ABE82200E311C00D0F089 /* MapwizeSimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapwizeSimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0ABE85200E311C00D0F089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F0ABE86200E311C00D0F089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BB7464203F0F4000DF29D9 /* libvlc.framework in Frameworks */,
 				EE38911BDDA94AB97ACE8527 /* Pods_MapwizeSimpleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +85,7 @@
 		8F0ABE79200E311C00D0F089 = {
 			isa = PBXGroup;
 			children = (
+				86BB7463203F0F4000DF29D9 /* libvlc.framework */,
 				8F0ABE84200E311C00D0F089 /* MapwizeSimpleApp */,
 				8F0ABE83200E311C00D0F089 /* Products */,
 				6761EDB4FB8544D4A33C92A2 /* Pods */,
@@ -91,6 +113,8 @@
 				8F0ABE90200E311C00D0F089 /* LaunchScreen.storyboard */,
 				8F0ABE93200E311C00D0F089 /* Info.plist */,
 				8F0ABE94200E311C00D0F089 /* main.m */,
+				86BB7460203EFDB600DF29D9 /* LVLCIndoorLocationProvider.h */,
+				86BB7461203EFDB600DF29D9 /* LVLCIndoorLocationProvider.m */,
 			);
 			path = MapwizeSimpleApp;
 			sourceTree = "<group>";
@@ -108,6 +132,7 @@
 				8F0ABE80200E311C00D0F089 /* Resources */,
 				1AD0E8F7038A44F1F82975E4 /* [CP] Embed Pods Frameworks */,
 				24662D18A97BC147EF5EE99F /* [CP] Copy Pods Resources */,
+				86BB745F203EFC5800DF29D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +154,7 @@
 				TargetAttributes = {
 					8F0ABE81200E311C00D0F089 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -171,9 +196,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MapwizeSimpleApp/Pods-MapwizeSimpleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IndoorLocation/IndoorLocation.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/MapwizeForMapbox/MapwizeForMapbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IndoorLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapwizeForMapbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -201,13 +235,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapwizeSimpleApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -220,6 +257,7 @@
 				8F0ABE8A200E311C00D0F089 /* ViewController.m in Sources */,
 				8F0ABE95200E311C00D0F089 /* main.m in Sources */,
 				8F0ABE87200E311C00D0F089 /* AppDelegate.m in Sources */,
+				86BB7462203EFDB600DF29D9 /* LVLCIndoorLocationProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +313,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2SBKWA9KN7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -330,12 +370,15 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2SBKWA9KN7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -344,6 +387,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -355,12 +399,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GGHGAE294R;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2SBKWA9KN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MapwizeSimpleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.MapwizeSimpleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.lucibel.MapwizeSimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d8c15200-e720-48db-b4a7-b310a647dd6d";
+				PROVISIONING_PROFILE_SPECIFIER = "XM Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,12 +422,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GGHGAE294R;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2SBKWA9KN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MapwizeSimpleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.MapwizeSimpleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = io.indoorlocation.lucibel.MapwizeSimpleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aaec0897-57e7-40a0-8791-3f77b1f92577";
+				PROVISIONING_PROFILE_SPECIFIER = AllNovDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
