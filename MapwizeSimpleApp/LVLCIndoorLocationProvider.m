@@ -16,6 +16,8 @@
 @property (atomic,strong) dispatch_queue_t backgroundQueue;
 @property (atomic,strong) ILIndoorLocation* lastIndoorLocation;
 @property (atomic,strong) NSString * vlcID;
+@property (atomic) BOOL beaconsFromServerAvailable;
+@property (atomic,strong) id beacons;
 @end
 
 @implementation LVLCIndoorLocationProvider
@@ -23,6 +25,18 @@
 -(instancetype)init{
     self =[super init];
     self.lastIndoorLocation=[[ILIndoorLocation alloc]init];
+    _beaconsFromServerAvailable = false;
+    dispatch_async([self getBackgroundQueue], ^{
+        NSError * error =nil;
+        NSURL *url = [NSURL URLWithString:@"https://api.mapwize.io/v1/beacons?api_key=e2af1248a493cd196fe54b1dbdba8ba8&venueId=5a8b1432c0b1600013546407"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        _beacons = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    
+        if (error) _beaconsFromServerAvailable = false;
+        else _beaconsFromServerAvailable = true;
+    });
+    
+    
     return self;
 }
 #pragma mark - Memory/Thread management
@@ -38,6 +52,23 @@
 
 -(void)stop{
     [VLCSequencer stop:[self getBackgroundQueue] withListener:self];
+}
+
+-(ILIndoorLocation*) locationFromServer:(NSString*) vlcid{
+    if (!_beacons) return nil;
+    ILIndoorLocation * innerIndoorLocation = [[ILIndoorLocation alloc]init];
+    for (id beacon in self.beacons) {
+        // do something with object
+        if([(NSString *) [beacon objectForKey:@"type"] isEqualToString:@"vlc"]
+           && [(NSString *) [[beacon objectForKey:@"properties"] objectForKey:@"lightId" ] hasPrefix:[vlcid substringToIndex:3]]){
+            [innerIndoorLocation setAccuracy:0];
+            [innerIndoorLocation setLongitude:[[[beacon objectForKey:@"location"] valueForKey:@"lon" ] doubleValue] ] ;
+            [innerIndoorLocation setLatitude:[[[beacon objectForKey:@"location"] valueForKey:@"lat" ] doubleValue] ] ;
+            [innerIndoorLocation setFloor: [NSNumber numberWithInteger:[[beacon valueForKey:@"floor"] integerValue]]];
+            return innerIndoorLocation;
+        }
+    }
+    return nil;
 }
 
 -(ILIndoorLocation*) locationFromHardVLCTable:(NSString*) vlcid{
@@ -77,7 +108,11 @@
     
     self.vlcID = [json valueForKey:@"data"];
     
-    ILIndoorLocation * localIndoorLocation = [self locationFromHardVLCTable:self.vlcID];
+    ILIndoorLocation * localIndoorLocation ;
+    if (self.beaconsFromServerAvailable)
+        localIndoorLocation=[self locationFromServer:self.vlcID];
+    else
+        localIndoorLocation=[self locationFromHardVLCTable:self.vlcID];
     if (localIndoorLocation==nil) return;
     if (([localIndoorLocation floor]!=[self.lastIndoorLocation floor])
         ||([localIndoorLocation longitude]!=[self.lastIndoorLocation longitude])
